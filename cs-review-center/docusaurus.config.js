@@ -87,18 +87,19 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/WingsUpete/CS-Review-Center/edit/master/cs-review-center/docs/',
+            'https://github.com/WingsUpete/CS-Review-Center/edit/master/cs-review-center/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/WingsUpete/CS-Review-Center/edit/master/cs-review-center/blog/',
+            'https://github.com/WingsUpete/CS-Review-Center/edit/master/cs-review-center/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
+	require.resolve('@docusaurus/core/lib/babel/preset')	// Babel
   ],
 };
