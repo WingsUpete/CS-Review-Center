@@ -1,5 +1,9 @@
 name: documentation
 
+defaults:
+  run:
+    working-directory: cs-review-center
+
 on:
   pull_request:
     branches: [master]
@@ -60,4 +64,4 @@ jobs:
           else
           npm i
           fi
-          npx docusaurus-deploy
+          npx docusaurus deploy
