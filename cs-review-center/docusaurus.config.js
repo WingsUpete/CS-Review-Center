@@ -9,9 +9,9 @@ module.exports = {
   projectName: 'CS-Review-Center', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'CS Review Center',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'CS-Review-Center Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -23,7 +23,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/WingsUpete/CS-Review-Center',
           label: 'GitHub',
           position: 'right',
         },
@@ -71,12 +71,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/WingsUpete/CS-Review-Center',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Peter S. Built with Docusaurus.`,
     },
   },
   presets: [
