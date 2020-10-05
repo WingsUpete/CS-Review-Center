@@ -1,8 +1,31 @@
-# UML (Unified Modeling Language) [统一建模语言]
+---
+id: UML
+title: UML (Unified Modeling Language) [统一建模语言]
+sidebar_label: UML
+slug: /
+---
+
+export const Anchor = ({children, id}) => (
+    <a
+        id={id}
+        style={{
+            color: 'black',
+            textDecoration: 'none'
+        }}
+    >
+    {children}
+    </a>
+);
+
+export const Rocket = ({children, to}) => (
+    <a
+        href={'#' + to}
+    >
+    {children}
+    </a>
+);
 
 Created by *Peter S* on *2020.09.14*, last updated on *2020.09.14*
-
-[toc]
 
 ## Modeling
 
@@ -40,7 +63,7 @@ In UML, there are two ways of modeling:
 
 Static Modeling captures the **fixed**, **code-level** relationships in the system
 
--   **[Class diagrams](#Class Diagram)** (widely used)
+-   **<Rocket to="class-diagram">Class Diagram</Rocket>** (widely used)
 -   Package diagrams
 -   Component diagrams
 -   Composite structure diagrams
@@ -52,20 +75,20 @@ Static Modeling captures the **fixed**, **code-level** relationships in the syst
 
 Behavioral diagrams are used to capture the dynamic execution of a system
 
--   **[Use case diagrams](#Use Case Diagram)** (widely used)
+-   **<Rocket to="use-case-diagram">Use case diagrams</Rocket>** (widely used)
 
 -   Interaction diagrams
 
     Focus on **communication** between elements
 
-    -   **[Sequence diagrams](#Sequence diagram)** (widely used)
+    -   **<Rocket to="sequence-diagram">Sequence diagrams</Rocket>** (widely used)
     -   Communication diagrams
     -   Interaction overview diagrams
     -   Timing diagrams
 
 -   Collaboration diagrams
 
--   **[State diagrams](#State Diagram)** (widely used)
+-   **<Rocket to="state-diagram">State Diagram</Rocket>** (widely used)
 
 -   **Activity diagrams** (widely used)
 
@@ -85,19 +108,19 @@ Behavioral diagrams are used to capture the dynamic execution of a system
 
 
 
-## Class Diagram
+## <Anchor id="class_diagram">Class Diagram</Anchor>
 
 …
 
 
 
-## Use Case Diagram
+## <Anchor id="use_case_diagram">Use Case Diagram</Anchor>
 
 …
 
 
 
-## Sequence diagram
+## <Anchor id="sequence_diagram">Sequence diagram</Anchor>
 
 A [sequence diagram](https://en.wikipedia.org/wiki/Sequence_diagram) shows object interactions arranged in time sequence.
 
@@ -127,7 +150,7 @@ Lucidchart Tutorial: https://www.lucidchart.com/pages/uml-sequence-diagram
 
 
 
-## State Diagram
+## <Anchor id="state_diagram">State Diagram</Anchor>
 
 …
 

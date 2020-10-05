@@ -1,3 +1,6 @@
+const remarkImages = require('remark-images');
+const rehypeTruncate = require('rehype-truncate');
+
 module.exports = {
   title: 'CS Review Center',
   tagline: 'Computer Science, Review',
@@ -7,6 +10,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'WingsUpete', // Usually your GitHub org/user name.
   projectName: 'CS-Review-Center', // Usually your repo name.
+  themes: ['@docusaurus/theme-live-codeblock'],
   themeConfig: {
     navbar: {
       title: 'CS Review Center',
@@ -37,11 +41,11 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: 'docs/tutorial/doc1/',
             },
             {
               label: 'Second Doc',
-              to: 'docs/doc2/',
+              to: 'docs/tutorial/doc2/',
             },
           ],
         },
@@ -78,6 +82,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Peter S. Built with Docusaurus.`,
     },
+    sidebarCollapsible: true,
+    prism: {
+      // theme: require('prism-react-renderer/themes/dracula'),
+    }
   },
   presets: [
     [
@@ -88,6 +96,8 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/WingsUpete/CS-Review-Center/edit/master/cs-review-center/',
+          remarkPlugins: [remarkImages],
+          rehypePlugins: [rehypeTruncate],
         },
         blog: {
           showReadingTime: true,
